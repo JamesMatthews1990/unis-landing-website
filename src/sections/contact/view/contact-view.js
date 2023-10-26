@@ -16,7 +16,7 @@ export default function ContactView() {
       <ContactHero />
 
       <Container sx={{ py: 10 }}>
-        <Box
+        {/* <Box
           gap={10}
           display="grid"
           gridTemplateColumns={{
@@ -26,8 +26,8 @@ export default function ContactView() {
         >
           <ContactForm />
 
-          <ContactMap contacts={_mapContact} />
-        </Box>
+          <ContactMap contacts={_mapContact} /> */}
+        {/* </Box> */}
       </Container>
     </>
   );

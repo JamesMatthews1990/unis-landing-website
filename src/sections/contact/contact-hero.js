@@ -15,7 +15,7 @@ import { MotionContainer, varFade } from 'src/components/animate';
 
 const CONTACTS = [
   {
-    country: 'Email',
+    country: '03455 841 911',
     address: 'enquiries@unis.one',
     phoneNumber: '',
   },
@@ -62,13 +62,13 @@ export default function ContactHero() {
             textAlign: { xs: 'center', md: 'unset' },
           }}
         >
-          <TextAnimate text="How" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
+          <TextAnimate text="UNIS" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
           <br />
 
           <Stack spacing={2} display="inline-flex" direction="row" sx={{ color: 'common.white' }}>
-            <TextAnimate text="to" />
-            <TextAnimate text="contact" />
+            <TextAnimate text="Contact" />
             <TextAnimate text="UNIS" />
+            <TextAnimate text="today" />
           </Stack>
 
           <Stack
@@ -80,13 +80,13 @@ export default function ContactHero() {
             {CONTACTS.map((contact) => (
               <Stack key={contact.country} sx={{ maxWidth: 180 }}>
                 <m.div variants={varFade().in}>
-                  <Typography variant="h6" gutterBottom>
+                  <Typography variant="h4" gutterBottom>
                     {contact.country}
                   </Typography>
                 </m.div>
 
                 <m.div variants={varFade().inRight}>
-                  <Typography variant="body2" sx={{ opacity: 0.8 }}>
+                  <Typography variant="h4" sx={{ opacity: 0.8 }}>
                     {contact.address}
                   </Typography>
                 </m.div>

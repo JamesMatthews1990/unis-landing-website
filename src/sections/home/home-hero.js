@@ -29,7 +29,7 @@ import cardrender from 'src/cardrender.avi';
 const StyledRoot = styled('div')(({ theme }) => ({
   ...bgGradient({
     // color: alpha(theme.palette.background.default, theme.palette.mode === 'light' ? 0.9 : 0.94),
-    color: alpha('#000000', theme.palette.mode === 'light' ? 0.9 : 0.94),
+    color: alpha('#151b21', theme.palette.mode === 'light' ? 0.9 : 0.94),
     imgUrl: '/assets/background/overlay_3.jpg',
   }),
   width: '100%',
@@ -46,7 +46,7 @@ const StyledWrapper = styled('div')(({ theme }) => ({
   height: '100%',
   overflow: 'hidden',
   position: 'relative',
-  backgroundColor: 'black',
+  backgroundColor: '#151c24',
   [theme.breakpoints.up('md')]: {
     marginTop: HEADER.H_DESKTOP_OFFSET,
   },
@@ -244,7 +244,6 @@ export default function HomeHero() {
             <Link
               color="inherit"
               variant="caption"
-              target="_blank"
               rel="noopener"
               href={paths.contact}
               sx={{
@@ -280,7 +279,7 @@ export default function HomeHero() {
           </Typography>
         </m.div>
 
-        <Stack spacing={2} direction="row" justifyContent="center">
+        {/* <Stack spacing={2} direction="row" justifyContent="center">
           {['figma', 'js', 'ts', 'nextjs', 'vite'].map((platform) => (
             <m.div key={platform} variants={varFade().in}>
               <Box
@@ -290,7 +289,7 @@ export default function HomeHero() {
               />
             </m.div>
           ))}
-        </Stack>
+        </Stack> */}
       </Stack>
     </Stack>
   );
@@ -382,9 +381,9 @@ export default function HomeHero() {
     /> */}
 
       <div style={{ marginRight: 30, marginTop: -60, marginBottom: -40 }}>
-        <video width="580" height="460" autoPlay loop muted>
+        <video width="620" height="460" autoPlay loop muted>
           {/* <source src="https://i.imgur.com/YQpGMYK.mp4" type="video/mp4" /> */}
-          <source src="https://i.imgur.com/2Nbqnkk.mp4" type="video/mp4" />
+          <source src="https://i.imgur.com/eam4jJU.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

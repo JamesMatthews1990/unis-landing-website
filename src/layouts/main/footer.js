@@ -67,7 +67,10 @@ export default function Footer() {
         <Typography variant="caption" component="div">
           © All rights reserved
           <br /> made by
-          <Link href="https://uniscompliance.com/"> UNIS Compliance </Link>
+          <Link href="https://unis.one/">
+            {' '}
+            <span style={{ color: '#ffd500', fontWeight: '700' }}> UNIS Media</span>{' '}
+          </Link>
         </Typography>
       </Container>
     </Box>

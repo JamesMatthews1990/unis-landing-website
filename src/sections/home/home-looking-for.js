@@ -24,9 +24,8 @@ export default function HomeLookingFor() {
       color="inherit"
       size="large"
       variant="outlined"
-      target="_blank"
       rel="noopener"
-      href={paths.zoneUI}
+      href={paths.contact}
       endIcon={<Iconify icon="eva:arrow-ios-forward-fill" />}
     >
       Speak to a Team Member Now
@@ -87,12 +86,12 @@ export default function HomeLookingFor() {
             {/* <source src="https://i.imgur.com/2Nbqnkk.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video> */}
-            <div style={{ borderRadius: 20 }}>
-              <img
-                src="https://i.imgur.com/0ZDTjQd.jpg"
-                alt=""
-                style={{ width: 550, objectFit: 'contain', borderRadius: 40, marginTop: 100 }}
-              />
+            <div style={{}}>
+              <video width="580" height="380" autoPlay muted>
+                {/* <source src="https://i.imgur.com/YQpGMYK.mp4" type="video/mp4" /> */}
+                <source src="https://i.imgur.com/sCHNpyO.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </m.div>
         </Grid>

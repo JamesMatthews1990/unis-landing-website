@@ -205,23 +205,20 @@ function PlanCard({ plan, sx, ...other }) {
         </Stack>
       )}
 
-      <Stack spacing={2.5}>
+      {/* <Stack spacing={2.5}>
         {commons.map((option) => (
           <Stack key={option} spacing={1} direction="row" alignItems="center">
             <Iconify icon="eva:checkmark-fill" width={16} />
             <Typography variant="body2">{option}</Typography>
           </Stack>
         ))}
-
         <Divider sx={{ borderStyle: 'dashed' }} />
-
         {options.map((option, optionIndex) => {
           const disabled =
             (standard && optionIndex === 1) ||
             (standard && optionIndex === 2) ||
             (standard && optionIndex === 3) ||
             (plus && optionIndex === 3);
-
           return (
             <Stack
               spacing={1}
@@ -237,7 +234,7 @@ function PlanCard({ plan, sx, ...other }) {
             </Stack>
           );
         })}
-      </Stack>
+      </Stack> */}
 
       <Stack alignItems="flex-end">
         <Button
